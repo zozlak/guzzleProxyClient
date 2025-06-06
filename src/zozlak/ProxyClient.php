@@ -43,7 +43,7 @@ class ProxyClient {
         $http  = (string) getenv('http_proxy');
         $https = (string) getenv('https_proxy');
         $no    = (string) getenv('no_proxy');
-        if (!empty($http . $https . $no)) {
+        if (!empty($http . $https . $no) && !isset($config['proxy'])) {
             $config['proxy'] = [
                 'http'  => $http,
                 'https' => $https,
