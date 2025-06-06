@@ -1,0 +1,26 @@
+{
+    "name": "zozlak/guzzle-proxy-client",
+    "type": "library",
+    "description": "A wrapper around GuzzleHttp Client honoring proxy settings in http_proxy, https_proxy and no_proxy environment variables",
+    "keywords": [],
+    "homepage": "https://github.com/zozlak/guzzleProxyClient",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mateusz Żółtak",
+            "email": "zozlak@zozlak.org",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": ">=6"
+    },
+    "autoload": {
+        "psr-4": {
+            "zozlak\\": "src/zozlak"
+        }
+    },
+    "require-dev": {
+        "phpstan/phpstan": "*"
+    }
+}
